@@ -5,7 +5,7 @@ class NewsTile extends StatelessWidget {
   final NewsItem item;
 
   NewsTile({super.key, required this.item}) {
-    item.image ?? "assets/noImage.jpg";
+  
   }
 
   @override

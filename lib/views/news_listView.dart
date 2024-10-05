@@ -51,11 +51,14 @@ class NewsListView extends StatelessWidget {
                   child: NewsTile(item: news[index]),
                 );
               }));
+       
     
    
   }
 }
 
+//Working But not good Solution for performance 
+//shrinkWrap is Building All Items at one time 
   // ListView.builder(
   //       itemCount: news.length,
   //       scrollDirection: Axis.vertical,

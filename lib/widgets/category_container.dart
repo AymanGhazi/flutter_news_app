@@ -11,7 +11,7 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
         Padding(
-          padding: const EdgeInsets.only(right: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 5),
           child: Container(
             height: 100,
             width: MediaQuery.of(context).size.width - 100.0,
@@ -21,7 +21,7 @@ class CategoryItem extends StatelessWidget {
                 image: DecorationImage(
                     image: AssetImage(item.image),
                     fit: BoxFit.fill,
-                    opacity: 24)),
+                    opacity: 25)),
             child: ClipRRect(
               // make sure we apply clip it properly
               child: BackdropFilter(
@@ -41,3 +41,5 @@ class CategoryItem extends StatelessWidget {
     );
   }
 }
+
+///API Key   55f35193ea9b43399ab427adbed91936

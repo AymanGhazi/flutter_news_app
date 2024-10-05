@@ -24,7 +24,7 @@ class HomeView extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
-      body: const Padding(
+      body: const  Padding(
           padding: EdgeInsets.symmetric(horizontal: 12),
           child: CustomScrollView(
             physics: BouncingScrollPhysics(),
@@ -32,9 +32,10 @@ class HomeView extends StatelessWidget {
               SliverToBoxAdapter(child: CategoriesListView()),
               SliverToBoxAdapter(
                   child: SizedBox(
-                height: 32,
+                height: 32, 
               )),
-              NewsListView(),
+            //  SliverToBoxAdapter(child: NewsListView(),) ,
+            NewsListView() //164 CustomScrollWidget
             ],
           )),
     );
