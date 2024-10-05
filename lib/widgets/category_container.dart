@@ -42,4 +42,3 @@ class CategoryItem extends StatelessWidget {
   }
 }
 
-///API Key   55f35193ea9b43399ab427adbed91936
